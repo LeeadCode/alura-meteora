@@ -1,0 +1,23 @@
+@import '../abstract/_vars' 
+@import './_section' 
+
+.categories__list
+  display: flex
+  flex-wrap: wrap
+  column-gap: 3rem
+  row-gap: 2rem
+  width: fit-content
+  margin: 0 auto
+
+  .categories__item
+    text-align: center
+    background: $cl_secundary
+    flex: 1 1 25%
+
+    .categories__item__description
+      background: $cl_tertiary    
+      color: $cl_alternative_font_color
+      font-size: 1.6rem
+      font-family: $default-font
+      font-weight: 500
+      padding: .8rem 1.6rem

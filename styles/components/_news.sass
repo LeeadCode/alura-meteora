@@ -1,0 +1,40 @@
+@import '../abstract/_vars' 
+
+.news
+  display: flex
+  flex-direction: column
+  gap: 2.4rem
+  padding: 1.6rem
+  text-align: center
+  border: 1px solid $cl_tertiary_light
+
+  .news__description
+    line-height: 2.3rem
+    font-weight: 400
+
+  .input_email__container
+    border: 1px solid $cl_tertiary_light
+    width: max-content
+    margin: 0 auto
+
+    .input_email
+      border: none
+      height: 100%
+      padding: 1rem 1.8rem
+
+      &::placeholder
+        font-size: 1.6rem
+        font-family: $default-font
+
+    .input_email__button
+      background: $cl_primary
+      color: $cl_alternative_font_color
+      font-weight: 500
+      display: inline-block
+      padding: 1.1rem 1.8rem
+      border: 0
+
+  @media screen and (min-width:$desktop-size)  
+    width: 40vw
+    margin: 0 auto
+        

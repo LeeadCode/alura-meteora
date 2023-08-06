@@ -1,0 +1,137 @@
+@import '../abstract/_vars'
+
+.header
+    display: flex
+    justify-content: space-between
+    background: $cl_tertiary
+    padding: 2rem 2.2rem
+    align-items: center
+
+    .header__nav_container
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        @media screen and (min-width:$tablet-size)
+            width: 60%
+            justify-content: left
+            gap: 2.0rem
+
+        @media screen and (min-width:$desktop-size)
+            gap: 4.0rem
+
+    .search__container
+        display: none
+
+        input
+            width: 140px
+            padding: .7rem 0
+
+            &::placeholder
+                font-size: 1.3rem
+                font-weight: 400
+                font-family: $default-font
+                text-align: center
+
+        button
+            padding: .7rem
+            background: transparent
+            color: $cl_alternative_font_color
+            border: 1px solid $cl_alternative_font_color
+            font-weight: 400
+            font-family: $default-font
+
+        @media screen and (min-width:$tablet-size)
+            display: block
+
+    .menu_nav
+        display: none
+        
+    .header__button
+        display: none
+
+        &:checked ~ .menu_nav
+            display: block
+
+    img
+        width: 40%
+
+        @media screen and (min-width:$tablet-size)
+            width: 25%
+
+    .header__menu
+        width: 1.8rem
+        height: 1.8rem
+        display: inline-block
+        background-image: url('../../static/img/icon-menu.svg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+
+        @media screen and (min-width:$tablet-size)
+            display: none
+
+    .menu_list
+        display: flex
+        flex-direction: column
+        gap: .8rem
+        position: absolute
+        right: .5px
+        padding: 1.5rem 2.4rem
+        background: #343A40
+        z-index: 10
+
+        @media screen and (min-width:$tablet-size)
+            position: inherit
+            flex-direction: row
+            background: transparent
+            gap: 2.0rem
+            padding: 0
+
+        @media screen and (min-width:$desktop-size)
+            gap: 4.0rem
+
+        .item__list
+            border-bottom: 1px solid $cl_alternative_font_color
+            padding-bottom: .8rem
+
+            @media screen and (min-width:$tablet-size)
+                padding-bottom: 0
+                border-bottom: none
+
+            .item__link
+                text-decoration: none
+                color: $cl_alternative_font_color
+                font-weight: 400
+
+                @media screen and (min-width:$tablet-size)
+                    font-size: 1.3rem
+
+                @media screen and (min-width:$desktop-size)
+                    font-size: 1.6rem
+
+.search_mobile
+    padding: 2.2rem
+    display: flex
+    gap: 1rem
+    justify-content: center
+
+    input
+        padding: .9rem 1.2rem
+        border: 1px solid
+
+        &::placeholder
+            font-size: 1.3rem
+            font-family: $default-font
+
+    button
+        padding: .9rem 1.2rem
+        font-size: $default-font-size
+        font-family: $default-font
+        background-color: transparent
+        border: 1px solid
+
+@media screen and (min-width:$tablet-size)
+    .search_mobile
+        display: none

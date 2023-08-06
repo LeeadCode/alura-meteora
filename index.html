@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteora</title>
+</head>
+<body>
+    <header class="header" id="home">
+        <div class="header__nav_container">
+            <img src="/static/img/Logo.png" alt="">
+            <div>
+                <input type="checkbox" id="menu" class="header__button" />
+                <label for="menu">
+                <span class="header__menu"></span>
+                </label>
+
+                <nav class="menu_nav">
+                    <ul class="menu_list">
+                        <li class="item__list">
+                            <a href="#home" class="item__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="item__list">
+                            <a href="#lojas" class="item__link">
+                                Nossas lojas
+                            </a>
+                        </li>
+                        <li class="item__list">
+                            <a href="#categorias" class="item__link">
+                                Categorias
+                            </a>
+                        </li>
+                        <li class="item__list">
+                            <a href="#produtos" class="item__link">
+                                Produtos
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+            
+        </div>
+        <div class="search__container">
+            <input type="search" placeholder="Digite o produto">
+            <button>Buscar</button>
+        </div>
+    </header>
+
+    <section class="search_mobile">
+        <input type="search" placeholder="Digite o produto">
+        <button>Pesquisar</button>
+    </section>
+
+    <section class="carrosel" id="lojas">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(min-width: 1000px)" srcset="/static/img/desktop/img_swiper1.png">
+                        <source media="(min-width: 720px)" srcset="/static/img/tablet/img_swiper1.png">
+                        <img src="/static/img/mobile/img_swiper1.png" alt="Modelo(a) meteora">
+                    </picture>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(min-width: 1000px)" srcset="/static/img/desktop/img_swiper2.png">
+                        <source media="(min-width: 720px)" srcset="/static/img/tablet/img_swiper2.png">
+                        <img src="/static/img/mobile/img_swiper2.png" alt="Modelo(a) meteora">
+                    </picture>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(min-width: 1000px)" srcset="/static/img/desktop/img_swiper3.png">
+                        <source media="(min-width: 720px)" srcset="/static/img/tablet/img_swiper3.png">
+                        <img src="/static/img/mobile/img_swiper3.png" alt="Modelo(a) meteora">
+                    </picture>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <section class="section" id="categorias">
+        <h2 class="section__title">Busque por categoria:</h2>
+        <ul class="categories__list">
+            <li class="categories__item">
+                <img src="/static/img/categories/Categoria camiseta.png" alt="Categoria Meteora" class="categories__item__image">
+                <p class="categories__item__description">Camisetas</p>
+            </li>
+            <li class="categories__item">
+                <img src="/static/img/categories/Categoria Bolsa.png" alt="Categoria Meteora" class="categories__item__image">
+                <p class="categories__item__description">Bolsas</p>
+            </li>
+            <li class="categories__item">
+                <img src="/static/img/categories/Categoria Calçados.png" alt="Categoria Meteora" class="categories__item__image">
+                <p class="categories__item__description">Calçados</p>
+            </li>
+            <li class="categories__item">
+                <img src="/static/img/categories/Categoria calça.png" alt="Categoria Meteora" class="categories__item__image">
+                <p class="categories__item__description">Calças</p>
+            </li>
+            <li class="categories__item">
+                <img src="/static/img/categories/Categoria casacos.png" alt="Categoria Meteora" class="categories__item__image">
+                <p class="categories__item__description">Casacos</p>
+            </li>
+            <li class="categories__item">
+                <img src="/static/img/categories/Categoria óculos.png" alt="Categoria Meteora" class="categories__item__image">
+                <p class="categories__item__description">Óculos</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section" id="produtos">
+        <h2 class="section__title">Produtos que estão bombando!</h2>
+        <div class="products__container">
+            <div class="products__card">
+                <img src="/static/img/products/Card camiseta.png" alt="Modelo Meteora" class="card__img">
+                <div class="products__card__info">
+                    <h3 class="card__title">Camiseta Conforto</h3>
+                    <p class="card__description">
+                        Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.
+                    </p>
+                    <p class="card__price">R$ 70,00</p>
+                    <a href="#products" class="card__button">Ver mais</a>
+                </div>
+            </div>
+
+            <div class="products__card">
+                <img src="/static/img/products/Card calça.png" alt="Modelo Meteora" 
+                class="card__img">
+                <div class="products__card__info">
+                    <h3 class="card__title">Calça Alfaiataria</h3>
+                    <p class="card__description">
+                        Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!
+                    </p>
+                    <p class="card__price">R$ 180,00</p>
+                    <a href="#products" class="card__button">Ver mais</a>
+                </div>
+            </div>
+
+            <div class="products__card">
+                <img src="/static/img/products/Card tenis.png" alt="Modelo Meteora" class="card__img">
+                <div class="products__card__info">
+                    <h3 class="card__title">Tênis Chunky</h3>
+                    <p class="card__description">
+                        Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.
+                    </p>
+                    <p class="card__price">R$ 250,00</p>
+                    <a href="#products" class="card__button">Ver mais</a>
+                </div>       
+            </div>
+
+            <div class="products__card">
+                <img src="/static/img/products/Card jaqueta jeans.png" alt="Modelo Meteora" class="card__img">
+                <div class="products__card__info">
+                    <h3 class="card__title">Jaqueta Jeans</h3>
+                    <p class="card__description">
+                        Modelo unissex oversized com gola de camurça. Atemporal e autêntica!
+                    </p>
+                    <p class="card__price">R$ 150,00</p>
+                    <a href="#products" class="card__button">Ver mais</a>
+                </div>    
+            </div>
+
+            <div class="products__card">
+                <img src="/static/img/products/Cards óculos.png" alt="Modelo Meteora" class="card__img">
+                <div class="products__card__info">
+                    <h3 class="card__title">Óculos Redondo</h3>
+                    <p class="card__description">
+                        Armação metálica em grafite com lentes arredondadas. Sem erro!
+                    </p>
+                    <p class="card__price">R$ 120,00</p>
+                    <a href="#products" class="card__button">Ver mais</a>
+                </div>    
+            </div>
+
+            <div class="products__card">
+                <img src="/static/img/products/Card bolsa.png" alt="Modelo Meteora" class="card__img">
+                <div class="products__card__info">
+                    <h3 class="card__title">Bolsa coringa</h3>
+                    <p class="card__description">
+                        Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!
+                    </p>
+                    <p class="card__price">R$ 120,00</p>
+                    <a href="#products" class="card__button">Ver mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="section facilidades">
+        <h2 class="section__title">Conheça todas as nossas facilidades</h2>
+        <div class="facilidades__container">
+            <div class="facilidades__item">
+                <img src="/static/img/facilidades/x-diamond.svg" alt="Icone pagamento pix" class="facilidades__img">
+                <h3 class="facilidades__title">PAGUE PELO PIX</h3>
+                <p class="facilidades__description">Ganhe 5% OFF em
+                    pagamentos via PIX</p>
+            </div>
+
+            <div class="facilidades__item">
+                <img src="/static/img/facilidades/arrow-repeat.svg" alt="Icone troca gratis" class="facilidades__img">
+                <h3 class="facilidades__title">PAGUE PELO PIX</h3>
+                <p class="facilidades__description">Ganhe 5% OFF em
+                    pagamentos via PIX</p>
+            </div>
+
+            <div class="facilidades__item">
+                <img src="/static/img/facilidades/flower1.svg" alt="Icone sustentabilidade" class="facilidades__img">
+                <h3 class="facilidades__title">PAGUE PELO PIX</h3>
+                <p class="facilidades__description">Ganhe 5% OFF em
+                    pagamentos via PIX</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="news">
+        <div class="news">
+            <p class="news__description">
+                Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!
+            </p>
+            <div class="input_email__container">
+                <input type="email" class="input_email" placeholder="Digite seu email">
+                <a href="#news" class="input_email__button">Enviar</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            autoplay: {
+                delay: 3500,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+    <footer class="footer">
+        <p class="footer__description">
+            2023 © Desenvolvido por Igor Augusto | Projeto fictício sem fins comerciais.
+        </p>
+    </footer>
+</body>
+</html>
